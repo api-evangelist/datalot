@@ -1,8 +1,14 @@
 aid: datalot
 name: Datalot
-description: 'Datalot is a company surfaced as a portfolio company of bessemer-venture-partners and added
-  to the API Evangelist network as a stub for enrichment. Sector: unknown. This profile is a lead awaiting
-  the enrichment pipeline.'
+description: 'Datalot (now operating under parent company Centerfield Insurance Services) is an analytics-driven
+  digital customer-acquisition and live lead/call marketplace platform for the insurance industry, spanning
+  auto, home, life, health, Medicare, and commercial lines. It runs digital demand-generation campaigns,
+  qualifies consumers in a real-time marketplace, and routes them by data to carriers and agents, adding
+  agent-presence and telephony management, TCPA/regulatory compliance tooling, and secondary-market handling
+  for unmatched consumers. Named carrier clients include Liberty Mutual, Allstate, Farmers, Progressive,
+  Travelers, Aetna, and Humana. The company is SOC 2 certified. It was surfaced as a portfolio company of
+  bessemer-venture-partners; the customer-facing surface is an authenticated carrier/agent portal at
+  app.datalot.com with no public API, SDK, or developer documentation.'
 url: https://raw.githubusercontent.com/api-evangelist/datalot/refs/heads/main/apis.yml
 x-type: company
 x-source: vc-portfolio
@@ -10,12 +16,32 @@ x-backed-by:
 - bessemer-venture-partners
 x-tier: stub
 x-tier-reason: portfolio-lead
+x-note: 'No public developer program — no OpenAPI, SDKs, docs, changelog, or webhooks published; app.datalot.com
+  is auth-gated. Rebranded/operated under Centerfield Insurance Services.'
+accessModel:
+  pricing: unknown
+  onboarding: unknown
+  trial: false
+  try_now: false
+  public: false
+  label: Unknown
+  confidence: low
+  source: []
+  generated: '2026-07-22'
+  method: derived
+image: https://www.datalot.com/images/datalot-logo.png
 specificationVersion: '0.20'
 created: '2026-07-17'
-modified: '2026-07-17'
+modified: '2026-07-18'
 tags:
 - Company
-- Unknown
+- Insurance
+- InsurTech
+- Lead Generation
+- Customer Acquisition
+- Marketing
+- Marketplace
+- Advertising
 apis: []
 maintainers:
 - FN: Kin Lane
@@ -23,5 +49,18 @@ maintainers:
 - FN: APIs.json
   email: info@apis.io
 common:
+- type: DomainSecurity
+  url: security/datalot-domain-security.yml
 - type: Website
   url: https://www.datalot.com/
+- type: Login
+  url: https://app.datalot.com/login
+- type: PrivacyPolicy
+  url: https://www.centerfield.com/privacy-policy/
+- type: TermsOfService
+  url: https://www.centerfield.com/terms-and-conditions/
+x-enrichment:
+  date: '2026-07-19'
+  status: backfilled
+  pass: local-v1
+  note: backfilled from .gitignore signal + verified work evidence
